@@ -1,0 +1,22 @@
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: ../docker/server.Dockerfile
+    env_file:
+      - ./.env
+    ports:
+      - "${SERVER_PORT}:${SERVER_PORT}"
+    # depends_on:
+    #   - db
+
+  client:
+    build:
+      context: .
+      dockerfile: ./docker/client.Dockerfile
+    ports:
+      - "${FRONTEND_PORT}:80"
+    env_file:
+      - ./.env
+    depends_on:
+      - server
