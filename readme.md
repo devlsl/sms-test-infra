@@ -20,8 +20,7 @@ docker compose up --build
 ```
 
 ### 4. Открыть в браузере
-- Клиент: `http://localhost:<FRONTEND_PORT>`
-- Сервер: `http://localhost:<SERVER_PORT>`
+- Клиент: `http://localhost:5173`
 
 ### 5. Остановить
 ```bash
