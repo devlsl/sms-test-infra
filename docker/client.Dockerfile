@@ -3,6 +3,7 @@ WORKDIR /app
 
 COPY client/ ./
 RUN yarn install
+COPY .env ./.env
 RUN yarn build
 
 FROM nginx:stable-alpine
