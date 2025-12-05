@@ -1,0 +1,6 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/devlsl/sms-test-server.git
+[submodule "client"]
+	path = client
+	url = https://github.com/devlsl/sms-test-client.git
